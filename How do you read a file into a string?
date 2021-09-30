@@ -1,0 +1,11 @@
+my_file = open("text_input.txt") # Create an “object” for the file we want to open
+  my_string = my_file.read() # Read the file contents into a string
+
+# It might help to know the length of the string, so we print that here
+    print (len(my_string))
+
+
+# For loop: Do everything inside. First, i = 0, then again for i = 1…until i = len(my_string)-1
+  for i in range(0,len(my_string)):
+      val = findcode(my_string[i]) # I’ll define this in a minute
+          print (i, " ", my_string[i], " ", val) 
