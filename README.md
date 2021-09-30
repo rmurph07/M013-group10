@@ -12,6 +12,8 @@ def convert_binary(x: str):
            ans += "111"
        elif i == "c":
            ans += "1001"
-    
+    y = ans.count("1") + ans.count("0")
+    y = str(y)
+    ans = y + "." + ans
     print(ans)
 convert_binary("abcbab")
