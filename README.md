@@ -58,8 +58,78 @@ def findcode(x: str):
            ans += "0110000"
        elif i == "x":
            ans += "0000111"
+       elif i == "A":
+           ans += "11101"
+       elif i == "B":
+           ans += "0001110"
+       elif i == "C":
+           ans += "0011100"
+       elif i == "D":
+           ans += "0111000"
+       elif i == "E":
+           ans += "11000"
+       elif i == "F":
+           ans += "0001101"
+       elif i == "G":
+           ans += "0011011"
+       elif i == "H":
+           ans += "0110111"
+       elif i == "I":
+           ans += "11010"
+       elif i == "J":
+           ans += "0001001"
+       elif i == "K":
+           ans += "0010010"
+       elif i == "L":
+           ans += "0100100"
+       elif i == "M":
+           ans += "0011101"
+       elif i == "N":
+           ans += "0111101"
+       elif i == "O":
+           ans += "10011"
+       elif i == "P":
+           ans += "0110101"
+       elif i == "Q":
+           ans += "0111010"
+       elif i == "R":
+           ans += "0101100"
+       elif i == "S":
+           ans += "0001011"
+       elif i == "T":
+           ans += "0111110"
+       elif i == "U":
+           ans += "11110"
+       elif i == "V":
+           ans += "0100111"
+       elif i == "W":
+           ans += "0100010"
+       elif i == "Y":
+           ans += "10001"
+       elif i == "Z":
+           ans += "0101000"
+       elif i == "X":
+           ans += "0010100"
+       elif i == "\n":
+           ans += "0110100"
+       elif i == " ":
+           ans += "10110"
+       elif i == "and":
+           ans += "10101"
+       elif i == "the":
+           ans += "11100"
+       elif i == ".":
+           ans += "10111"
+       elif i == ",":
+           ans += "0110011"
+       elif i == "!":
+           ans += "0111001"
+       elif i == "'":
+           ans += "0010011"
+       elif i == '"':
+           ans += "0100101"
     y = ans.count("1") + ans.count("0")
     y = str(y)
     ans = y + "." + ans
     print(ans)
-findcode("")
+findcode("abcdefghijklmnopqrstuvwyxzABCDEFGHIJKLMNOPQRSTUVWXYZ\n andthe.!'")
