@@ -3,6 +3,9 @@ ECS 101 Project #1
 
 7 long bits and 4 short bits 
 
+input_file = open("text_input")
+file_string = input_file.read()
+
 def findcode(x: str):
     ans = ""
     for i in x:
@@ -132,4 +135,5 @@ def findcode(x: str):
     y = str(y)
     ans = y + "." + ans
     print(ans)
-findcode("abcdefghijklmnopqrstuvwyxzABCDEFGHIJKLMNOPQRSTUVWXYZ\n andthe.!'")
+
+findcode(file_string)
