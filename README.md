@@ -5,7 +5,7 @@ ECS 101 Project #1
 1. This program utilizes short and long bit binary values. 
 2. The short bit binary values are 5-bit.
 3. The long bit binary values are 7-bit. 
-4. There are 16 short characters this program utilizes. 
+4. There are 14 short characters this program utilizes. 
 
 # PROGRAM 1 HOW TO: ENCODE STRING TO BINARY
 
