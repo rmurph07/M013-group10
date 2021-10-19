@@ -1,6 +1,7 @@
 
 input_file = open("text_input")
 file_string = input_file.read()
+output_file = open("findcode_output", "w")
 
 def findcode(x: str):
     ans = ""
@@ -12,7 +13,7 @@ def findcode(x: str):
        elif i == "c":
            ans += "0000011"
        elif i == "d":
-            ans += "0000111"
+            ans += "0010111"
        elif i == "e":
            ans += "10010"
        elif i == "f":
@@ -113,10 +114,6 @@ def findcode(x: str):
            ans += "0110100"
        elif i == " ":
            ans += "10110"
-       elif i == "and":
-           ans += "10101"
-       elif i == "the":
-           ans += "11100"
        elif i == ".":
            ans += "10111"
        elif i == ",":
@@ -130,6 +127,7 @@ def findcode(x: str):
     y = ans.count("1") + ans.count("0")
     y = str(y)
     ans = y + "." + ans
-    print(ans)
-
-findcode(file_string)
+    return ans
+binary = findcode(file_string)
+output_file.write(binary)
+output_file.close()
