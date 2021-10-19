@@ -3,7 +3,7 @@ ECS 101 Project #1
 
 # Important Information To Know: 
 1. This program utilizes short and long bit binary values. 
-2. The short bit binary values are 4-bit.
+2. The short bit binary values are 5-bit.
 3. The long bit binary values are 7-bit. 
 4. There are 16 short characters this program utilizes. 
 
