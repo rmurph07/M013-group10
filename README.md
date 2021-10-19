@@ -10,7 +10,7 @@ ECS 101 Project #1
 # PROGRAM 1 HOW TO: ENCODE STRING TO BINARY
 
 1. Input program Findcode into interpreter. 
-2. Create a new text file called "text_input.txt" or input predetermined file called "text_input.txt" in M013-group10 GitHub 
+2. Create a new text file called "text_input.txt" or input predetermined file called "text_input.txt" from M013-group10 GitHub 
 3. Input string in text file (Ex: "abcdefgh") 
 5. Run program 
 6. The desired output will be in a file named "findcode_output.txt" and will be a string of binary values with the count in front (Ex: 4.10001). 
