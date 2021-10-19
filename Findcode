@@ -11,53 +11,53 @@ def findcode(x: str):
        elif i == "b":
            ans += "0000001" # binary value of b - adds binary value to the new string
        elif i == "c":
-           ans += "0000011"
+           ans += "0000011" # binary value of c - adds binary value to the new string
        elif i == "d":
-            ans += "0010111"
+            ans += "0010111" # binary value of d - adds binary value to the new string
        elif i == "e":
-           ans += "10010"
+           ans += "10010" # binary value of e - adds binary value to the new string
        elif i == "f":
-           ans += "0001111"
+           ans += "0001111" # binary value of f - adds binary value to the new string
        elif i == "g":
-           ans += "0011111"
+           ans += "0011111" # binary value of g - adds binary value to the new string
        elif i == "h":
-           ans += "0111111"
+           ans += "0111111" # binary value of h - adds binary value to the new string
        elif i == "i":
-           ans += "11111"
+           ans += "11111" # binary value of i - adds binary value to the new string
        elif i == "j":
-           ans += "0000010"
+           ans += "0000010" # binary value of j - adds binary value to the new string
        elif i == "k":
-           ans += "0000100"
+           ans += "0000100" # binary value of k - adds binary value to the new string
        elif i == "l":
-           ans += "0001000"
+           ans += "0001000" # binary value of l - adds binary value to the new string
        elif i == "m":
-           ans += "0010000"
+           ans += "0010000" # binary value of m - adds binary value to the new string
        elif i == "n":
-           ans += "0100000"
+           ans += "0100000" # binary value of n - adds binary value to the new string
        elif i == "o":
-           ans += "10100"
+           ans += "10100" # binary value of o - adds binary value to the new string
        elif i == "p":
-           ans += "0000101"
+           ans += "0000101" # binary value of p - adds binary value to the new string
        elif i == "q":
-           ans += "0001010"
+           ans += "0001010" # binary value of q - adds binary value to the new string
        elif i == "r":
-           ans += "0010101"
+           ans += "0010101" # binary value of r - adds binary value to the new string
        elif i == "s":
-           ans += "0101011"
+           ans += "0101011" # binary value of s - adds binary value to the new string
        elif i == "t":
-           ans += "0000110"
+           ans += "0000110" # binary value of t - adds binary value to the new string
        elif i == "u":
-           ans += "11001"
+           ans += "11001" # binary value of u - adds binary value to the new string
        elif i == "v":
-           ans += "0001100"
+           ans += "0001100" # binary value of v - adds binary value to the new string
        elif i == "w":
-           ans += "0011000"
+           ans += "0011000" # binary value of w - adds binary value to the new string
        elif i == "y":
-           ans += "10000"
+           ans += "10000" # binary value of y - adds binary value to the new string
        elif i == "z":
-           ans += "0110000"
+           ans += "0110000" # binary value of z - adds binary value to the new string
        elif i == "x":
-           ans += "0000111"
+           ans += "0000111" # binary value of x - adds binary value to the new string
        elif i == "A":
            ans += "11101"
        elif i == "B":
