@@ -147,10 +147,10 @@ def decode(x: str):
             elif x[:7] == "0100101":
                 ans += '"'
                 x = x[7::]
-        elif x[0] == "1":
-            if x[:5] == "11011":
-                ans += "a"
-                x = x[5::]
+        elif x[0] == "1": #checks if binary value is long or short bit 
+            if x[:5] == "11011": # checks first 5 values 
+                ans += "a" # adds a to empty string 
+                x = x[5::] # replaces that binary value with ""
             elif x[:5] == "10010":
                 ans += "e"
                 x = x[5::]
