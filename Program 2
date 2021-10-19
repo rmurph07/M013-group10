@@ -1,194 +1,195 @@
 Program 2 
 
 
+input_file = open("findcode_output")
+output_file = open("decode_output", "w")
+binary_string = input_file.read()
+bstring_list = binary_string.split(".")
+binary_string = bstring_list[1]
+
 def decode(x: str):
     ans = "" 
     while len(x) > 4: 
         if x[0] == "0": #checks if long or short bit
             if x[:7] == "0000001": # checks if its b
                 ans += "b" # adds b to empty string 
-                x = x.replace(x[:7], "") # replaces binary with nothing
+                x = x[7::] # replaces binary with nothing
             elif x[:7] == "0000011":
                 ans += "c"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0010111":
                 ans += "d"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0001111":
                 ans += "f"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0011111":
                 ans += "g"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0111111":
                 ans += "h"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0000010":
                 ans += "j"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0000100":
                 ans += "k"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0001000":
                 ans += "l"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0010000":
                 ans += "m"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0100000":
                 ans += "n"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0000101":
                 ans += "p"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0001010":
                 ans += "q"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0010101":
                 ans += "r"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0101011":
                 ans += "s"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0000110":
                 ans += "t"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0001100":
                 ans += "v"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0011000":
                 ans += "w"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0110000":
                 ans += "z"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0000111":
                 ans += "x"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0001110":
                 ans += "B"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0011100":
                 ans += "C"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0111000":
                 ans += "D"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0001101":
                 ans += "F"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0011011":
                 ans += "G"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0110111":
                 ans += "H"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0001001":
                 ans += "J"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0010010":
                 ans += "K"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0100100":
                 ans += "L"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0011101":
                 ans += "M"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0111101":
                 ans += "N"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0110101":
                 ans += "P"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0111010":
                 ans += "Q"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0101100":
                 ans += "R"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0001011":
                 ans += "S"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0111110":
                 ans += "T"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0100111":
                 ans += "V"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0100010":
                 ans += "W"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0101000":
                 ans += "Z"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0010100":
                 ans += "X"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0110100":
                 ans += "\n"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0110011":
                 ans += ","
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0111001":
                 ans += "!"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0010011":
                 ans += "'"
-                x = x.replace(x[:7], "")
+                x = x[7::]
             elif x[:7] == "0100101":
                 ans += '"'
-                x = x.replace(x[:7], "")
+                x = x[7::]
         elif x[0] == "1":
             if x[:5] == "11011":
                 ans += "a"
-                x = x.replace(x[:5], "")
+                x = x[5::]
             elif x[:5] == "10010":
                 ans += "e"
-                x = x.replace(x[:5], "")
+                x = x[5::]
             elif x[:5] == "11111":
                 ans += "i"
-                x = x.replace(x[:5], "")
+                x = x[5::]
             elif x[:5] == "10100":
                 ans += "o"
-                x = x.replace(x[:5], "")
+                x = x[5::]
             elif x[:5] == "11001":
                 ans += "u"
-                x = x.replace(x[:5], "")
+                x = x[5::]
             elif x[:5] == "10000":
                 ans += "y"
-                x = x.replace(x[:5], "")
+                x = x[5::]
             elif x[:5] == "11101":
                 ans += "A"
-                x = x.replace(x[:5], "")
+                x = x[5::]
             elif x[:5] == "11000":
                 ans += "E"
-                x = x.replace(x[:5], "")
+                x = x[5::]
             elif x[:5] == "11010":
                 ans += "I"
-                x = x.replace(x[:5], "")
+                x = x[5::]
             elif x[:5] == "10011":
                 ans += "O"
-                x = x.replace(x[:5], "")
+                x = x[5::]
             elif x[:5] == "11110":
                 ans += "U"
-                x = x.replace(x[:5], "")
+                x = x[5::]
             elif x[:5] == "10001":
                 ans += "Y"
-                x = x.replace(x[:5], "")
+                x = x[5::]
             elif x[:5] == "10110":
                 ans += " "
-                x = x.replace(x[:5], "")
-            elif x[:5] == "10101":
-                ans += "and"
-                x = x.replace(x[:5], "")
-            elif x[:5] == "11100":
-                ans += "the"
-                x = x.replace(x[:5], "")
+                x = x[5::]
             elif x[:5] == "10111":
                 ans += "."
-                x = x.replace(x[:5], "")
+                x = x[5::]
     return ans
-func = decode("00000010000001")
-print(func)
+text_output = decode(binary_string)
+output_file.write(text_output)
+output_file.close()
