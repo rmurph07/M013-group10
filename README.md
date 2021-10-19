@@ -20,6 +20,6 @@ ECS 101 Project #1
 
 1. Input program Decode into interpreter. 
 2. Use the output file from Findcode program ("findcode_output.txt") 
-3. Keep the output in file with the count of the binary. 
+3. Keep binary value count in the file - (The program will ignore it). 
 4. Run program
 5. The desired output will be in a new file named "decode_output.txt" and will be a string of text (Ex: "hello"). 
