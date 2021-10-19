@@ -1,19 +1,20 @@
-Program 2 
+# Program 2 (Decode) - decode binary to text 
 
+ 
+input_file = open("findcode_output.txt") # opens binary output file from program 1 
+output_file = open("decode_output.txt", "w") # opens new file 
+binary_string = input_file.read() # reads file 
+bstring_list = binary_string.split(".") 
+binary_string = bstring_list[1] 
 
-input_file = open("findcode_output")
-output_file = open("decode_output", "w")
-binary_string = input_file.read()
-bstring_list = binary_string.split(".")
-binary_string = bstring_list[1]
-
+# converting binary to string 
 def decode(x: str):
-    ans = "" 
-    while len(x) > 4: 
-        if x[0] == "0": #checks if long or short bit
-            if x[:7] == "0000001": # checks if its b
+    ans = "" # empty string that will hold converted binary to text 
+    while len(x) > 4: # while loop that makes sure length of each binary number is greater than 4 
+        if x[0] == "0": #checks if binary value is long or short bit 
+            if x[:7] == "0000001": # checks first 7 values 
                 ans += "b" # adds b to empty string 
-                x = x[7::] # replaces binary with nothing
+                x = x[7::] # replaces that binary value with "" 
             elif x[:7] == "0000011":
                 ans += "c"
                 x = x[7::]
@@ -189,7 +190,7 @@ def decode(x: str):
             elif x[:5] == "10111":
                 ans += "."
                 x = x[5::]
-    return ans
-text_output = decode(binary_string)
-output_file.write(text_output)
-output_file.close()
+    return ans # returns completed string 
+text_output = decode(binary_string) 
+output_file.write(text_output) # writes code into file 
+output_file.close() # closes file 
